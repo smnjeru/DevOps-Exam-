@@ -29,7 +29,7 @@ sh "ls -l"
 }
 
 stage('Deploy'){
-sh "docker run -d -p 7165 moringa:latest"
+sh "docker run -d -p 7165:80/tcp moringa:latest"
 }  
 
 }
