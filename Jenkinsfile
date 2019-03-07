@@ -28,5 +28,8 @@ stage('Apply changes to the environment'){
 sh "ls -l"
 }
 
+stage('Deploy'){
+sh "docker run -d -p 7165 latest"
+}  
 
 }
