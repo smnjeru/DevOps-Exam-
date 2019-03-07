@@ -29,7 +29,7 @@ sh "ls -l"
 }
 
 stage('Deploy'){
-sh "docker run -d -p 7165 latest"
+sh "docker run -d -p 7165 moringa:latest"
 }  
 
 }
